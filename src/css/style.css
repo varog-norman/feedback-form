@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-form {
+    width: 450px;
+    margin: 100px auto 100px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    font-family: sans, serif;
+    font-size: 14px;
+}
+
+.feedback-form_item {
+    margin-top: 30px;
+}
+
+.feedback-form_item:first-child {
+    margin-top: 0;
+}
+
+input[type='text'] {
+    width: 410px;
+    height: 70px;
+    padding: 0 20px;
+    background-color #fff;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+input[type='text']:focus {
+    box-shadow: 0 0 2px #09c5fb;
+}
+
+.btn {
+    position: relative;
+    width: 195px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    background: none;
+    background-color: #09C5FB;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1;
+    transition: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 0;
+    width: 100%;
+    background-color: #FBDC09;
+    z-index: -1;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.btn:hover::before {
+    height: 100%;
+}
+
+.btn:active::before {
+    background-color: #E7CA04;
+}
+
+select {
+    width: 195px;
+    height: 50px;
+    border: none;
+    background: none;
+    text-align: center;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type='radio']:last-child {
+    margin-right: 0;
+}
+
+textarea {
+    width: 410px;
+    height: 130px;
+    padding: 10 20px;
+    background-color #fff;
+    border: none;
+    box-sizing: border-box;
+    resize: none;
+}
